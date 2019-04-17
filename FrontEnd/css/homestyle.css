@@ -1,3 +1,37 @@
 #signupbtn{
     padding: 0!important;
 }
+
+#carouselIndicators{
+    position: relative;
+    margin-top: 10%;
+}
+
+.carousel-item {
+    height: 583px;
+}
+
+section {
+    position: relative;
+    margin-top: 10%;
+}
+
+#feedback{
+    display: inline-block;
+
+}
+
+.card{
+    border: none;
+    text-align: center;
+    float: left;
+
+}
+.card-text{
+    margin: 3px;
+}
+
+.checked {
+
+    color: orange;
+  }
