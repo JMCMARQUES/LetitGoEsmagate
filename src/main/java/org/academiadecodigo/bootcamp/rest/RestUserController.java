@@ -22,6 +22,8 @@ public class RestUserController {
     }
 
 
+
+
     @RequestMapping(method = RequestMethod.GET, path = "/{id}")
     public ResponseEntity<User> getUser(@PathVariable Integer id){
 
@@ -51,6 +53,15 @@ public class RestUserController {
     public ResponseEntity<User> createUser(@RequestBody User user){
 
         mockUserService.add(user);
+
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET, path = "/createtestusers")
+    public ResponseEntity<User> createTestUsers(){
+
+        mockUserService.addTests();
 
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

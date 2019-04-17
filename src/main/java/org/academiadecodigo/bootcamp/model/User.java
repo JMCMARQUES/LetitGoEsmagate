@@ -31,6 +31,14 @@ public class User {
     private List<Recipient> recipients = new LinkedList<>();
     private Pod pod;
 
+
+    public User(@NotNull(message = "First name is mandatory") @NotBlank(message = "First name is mandatory") @Size(min = 3, max = 64) String firstName, @NotNull(message = "Last name is mandatory") @NotBlank(message = "Last name is mandatory") @Size(min = 3, max = 64) String lastName, @NotNull(message = "Password is mandatory") @NotBlank(message = "First name is mandatory") @Size(min = 5, max = 15) String password, @Email @NotBlank(message = "Email is mandatory") String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.email = email;
+    }
+
     public Integer getId() {
         return id;
     }
