@@ -5,12 +5,23 @@ import java.util.List;
 
 public class User {
 
+    private Integer id;
+
+
     private String firstName;
     private String lastName;
     private String password;
     private String email;
     private List<Recipient> recipients = new LinkedList<>();
     private Pod pod;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return firstName;
