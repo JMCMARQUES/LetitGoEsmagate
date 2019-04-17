@@ -14,18 +14,23 @@
 section {
     position: relative;
     margin-top: 10%;
+
 }
 
 #feedback{
-    display: inline-block;
-
+margin: 10% auto;
 }
+
+section#feedback>div.container{
+    display: flex;
+align-self: center;
+}
+
 
 .card{
     border: none;
     text-align: center;
-    float: left;
-
+    margin: auto;
 }
 .card-text{
     margin: 3px;
