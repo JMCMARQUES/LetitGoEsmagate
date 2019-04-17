@@ -7,8 +7,16 @@ define(function () {
 
     internals.routes = {
         mainPage: {
-            hash: '#main-page',
-            controller: 'main-page-controller'
+            hash: '#mainPage',
+            controller: 'main-controller'
+        },
+        loginPage: {
+            hash: '#login-page',
+            controller: 'login-controller'
+        },
+        registrationPage: {
+            hash: 'register-page',
+            controller: 'register-controller'
         }
     }
 
@@ -53,19 +61,10 @@ define(function () {
         });
     }
 
-    function loadDefaultRoute(){
+    function loadDefaultRoute() {
         window.location.hash = internals.routes[internals.defaultRoute].hash;
         loadController(internals.routes[internals.defaultRoute].controller);
     }
 
-return externals;
-
-
-
-
-
-
-
-
-
+    return externals;
 })
