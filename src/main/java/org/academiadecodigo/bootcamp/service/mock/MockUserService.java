@@ -1,9 +1,11 @@
 package org.academiadecodigo.bootcamp.service.mock;
 
 import org.academiadecodigo.bootcamp.model.User;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
+@Service
 public class MockUserService extends AbstractMockService<User> {
 
     public Map<Integer, User> getMap() {

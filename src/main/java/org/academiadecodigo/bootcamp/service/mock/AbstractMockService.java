@@ -1,14 +1,13 @@
 package org.academiadecodigo.bootcamp.service.mock;
 
-import org.academiadecodigo.bootcamp.model.User;
-
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 
 public abstract class AbstractMockService<T> {
 
 
-    protected Map<Integer, T> modelMap;
+    protected Map<Integer, T> modelMap = new HashMap<>();
 
 
     protected Integer getNextId() {

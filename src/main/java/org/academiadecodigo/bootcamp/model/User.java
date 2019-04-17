@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.model;
 
+import javax.validation.constraints.*;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -8,9 +10,23 @@ public class User {
     private Integer id;
 
 
+    @NotNull(message = "First name is mandatory")
+    @NotBlank(message = "First name is mandatory")
+    @Size(min = 3, max = 64)
     private String firstName;
+
+    @NotNull(message = "Last name is mandatory")
+    @NotBlank(message = "Last name is mandatory")
+    @Size(min = 3, max = 64)
     private String lastName;
+
+    @NotNull(message = "Password is mandatory")
+    @NotBlank(message = "First name is mandatory")
+    @Size(min = 5, max = 15)
     private String password;
+
+    @Email
+    @NotBlank(message = "Email is mandatory")
     private String email;
     private List<Recipient> recipients = new LinkedList<>();
     private Pod pod;
@@ -22,6 +38,7 @@ public class User {
     public void setId(Integer id) {
         this.id = id;
     }
+
 
     public String getFirstName() {
         return firstName;
