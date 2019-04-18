@@ -20,9 +20,18 @@ function showSeePod(element) {
         "</div>" +
         "<div>" +
         "<button id='returnBtn' type='submit' class='btn btn-primary'>Previous Page</button>" +
+        "<button id='letItGoBtn' type='submit' onclick='letItGo()' class='btn btn-primary'>Let it Goooo!</button>" +
         "</div>" +
         "</div>";
 
     $(seePod).appendTo(app);
+
+    function letItGo(){
+        $('#app').empty();
+        
+       var shavedIce = "<div class='container'>" +
+       "<img src='pic_trulli.jpg' alt='Italian Trulli'>" +
+       "</div>"
+    }
 
 }

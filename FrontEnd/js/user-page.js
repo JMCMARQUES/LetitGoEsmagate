@@ -5,7 +5,7 @@ function showUserPage(response) {
   var user = response;
 
   var podCreationBtn =
-    "</ul> <button id='podCreation' type='button' onclick='showPodStyle()' class='btn btn-lg btn-block btn-outline-primary'>Get your Pod!</button>";
+    "</ul> <button id='podCreation' type='button' onclick='showPodStyle("+user+")' class='btn btn-lg btn-block btn-outline-primary'>Get your Pod!</button>";
 
   var userPage =
     "<div class='container'>" +
@@ -57,7 +57,7 @@ function showUserPage(response) {
         "<tr><td id='nameTD'><h3 id='rowh3'>" +
         element.firstName +
         "</h3></td><td id='btnTD'><button type='button' onclick='showSeePod(" +
-        element.email +
+        element +
         ")' class='btn btn-success' id='goToFeedBtn'>Go To Feed</button></td></tr>";
       $(listItem).appendTo($("#caretakers-list"));
     });
