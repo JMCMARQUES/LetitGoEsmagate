@@ -1,0 +1,15 @@
+.nav-link{
+    display: flex;
+    align-content: center;
+    padding: 0!important;
+
+}
+
+#godown{
+    position: relative;
+    margin-top: 10%;
+}
+
+#godown{
+    color: rgb(100, 80, 52);
+}
