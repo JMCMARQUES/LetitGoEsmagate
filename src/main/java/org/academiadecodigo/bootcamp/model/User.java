@@ -1,16 +1,24 @@
 package org.academiadecodigo.bootcamp.model;
 
+
 import java.util.LinkedList;
 import java.util.List;
 
 public class User {
 
+
     private String firstName;
     private String lastName;
     private String password;
     private String email;
-    private List<Recipient> recipients = new LinkedList<>();
+    private List<User> caretakers = new LinkedList<>();
+    private List<User> takingcares = new LinkedList<>();
     private Pod pod;
+
+    public List<User> getTakingcares() {
+        return takingcares;
+    }
+
 
     public String getFirstName() {
         return firstName;
@@ -49,23 +57,28 @@ public class User {
         return email;
     }
 
-    public List<Recipient> getRecipients() {
-        return recipients;
+    public List<User> getCaretakers() {
+        return caretakers;
     }
 
     public Pod getPod() {
         return pod;
     }
 
-    public void addRecipient(Recipient recipient){
-        recipients.add(recipient);
-        recipient.setUser(this);
+
+    public void addCaretaker(User caretaker){
+        caretakers.add(caretaker);
     }
 
 
-    public void removeRecipient(Recipient recipient){
-        recipients.remove(recipient);
-        recipient.setUser(null);
+
+
+    public void removeCaretaker(User caretaker){
+        caretakers.remove(caretaker);
+    }
+
+    public void addTakingCare(User takingcare){
+        takingcares.add(takingcare);
     }
 
 
