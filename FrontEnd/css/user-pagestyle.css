@@ -1,11 +1,13 @@
-.nav-link{
-    display: flex;
-    align-content: center;
-    padding: 0!important;
-
+#welcomeh1{
+    text-align: center;
+    padding-top: 4%;    
+    padding-bottom: 3%;
 }
 
-#godown{
-    position: relative;
-    margin-top: 5%;
+#userPic{
+    margin: auto;
+    border-radius: 100%!important;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 3%;
 }
