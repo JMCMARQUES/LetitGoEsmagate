@@ -1,5 +1,6 @@
-function showPodStyle(element) {
+function showPodStyle(response) {
     console.log('showing pod style');
+    console.log(response)
     $('#app').empty();
 
 
@@ -53,7 +54,7 @@ function showPodStyle(element) {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod3.png' alt='pod3' class='rounded' width='100%'>" +
         "</ul>" +
-        "<button type='button' id='choose-3' onclick='choosespod(this.id,element)' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 3</button>" +
+        "<button type='button' id='choose-3' onclick='choosespod(this.id,ojb)' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 3</button>" +
         "</div>" +
         "</div>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -84,7 +85,7 @@ function showPodStyle(element) {
 
 
     var thepod = function () {
-        showPodStyle();
+        //showPodStyle();
     }
 
     var invalidpod = function () {

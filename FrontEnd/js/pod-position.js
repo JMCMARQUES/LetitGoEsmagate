@@ -1,4 +1,4 @@
-function showPodStyle() {
+function showPodPos() {
     console.log('showing podposition')
 
 

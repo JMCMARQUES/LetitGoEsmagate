@@ -1,11 +1,15 @@
 function showUserPage(response) {
-  console.log(response);
-  $("#app").empty();
-
+  //console.log(response);
+  console.log('in the user page')
   var user = response;
 
+  //showPodStyle(user)
+  $("#app").empty();
+
+  
+
   var podCreationBtn =
-    "</ul> <button id='podCreation' type='button' onclick='showPodStyle("+user+")' class='btn btn-lg btn-block btn-outline-primary'>Get your Pod!</button>";
+    "</ul> <button id='podCreation' type='button' onclick='showPodStyle()' class='btn btn-lg btn-block btn-outline-primary'>Get your Pod!</button>";
 
   var userPage =
     "<div class='container'>" +
