@@ -4,7 +4,7 @@ function showPodStyle() {
 
     $('#app').empty();
     let nextBotton = "<button id='podCreation' type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='podCaretaker()'>Next!</button>";
-    ___
+    
 
     var podPosition = "<div class='container'>" +
         "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>" +
