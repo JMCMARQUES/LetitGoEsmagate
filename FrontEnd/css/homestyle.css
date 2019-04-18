@@ -88,3 +88,9 @@ align-self: center;
 
     color: orange;
   }
+
+  #signup{
+      position: relative;
+      margin-top: -8%;
+      text-align: center;
+  }
