@@ -21,7 +21,7 @@ function showSeePod() {
         "</div>" +
         "<div>" +
         "<button id='returnBtn' type='submit' onclick='showUserPage()' class='btn btn-primary'>Previous Page</button>" +
-        "<button id='letItGoBtn' type='submit' onclick='letItGo()' class='btn btn-primary'>Let it Goooo!</button>" +
+        "<button id='letItGoBtn' type='submit' onclick='letItGo()' class='btn btn-primary btn-lg'>Let it Goooo!</button>" +
         "</div>" +
         "</div>";
 
