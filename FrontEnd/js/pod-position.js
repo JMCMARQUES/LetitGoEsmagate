@@ -3,9 +3,8 @@ function showPodStyle() {
 
 
     $('#app').empty();
-    let nextBotton ="<button id='podCreation' onclick='podCaretaker()'>";
-
-
+    let nextBotton = "<button id='podCreation' type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='podCaretaker()'>Next!</button>";
+    
 
     var podPosition = "<div class='container'>" +
         "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>" +
@@ -28,7 +27,7 @@ function showPodStyle() {
         "checked>" +
         "<label class='form-check-label' for='materialChecked'>Frozen cowboy</label>" +
         "</div>" +
-        "<button id='podCreation' type='button' class='btn btn-lg btn-block btn-outline-primary'>Next!</button>" +
+        nextBotton +
         "</div></div></div>"
 
     $(podPosition).appendTo(app)

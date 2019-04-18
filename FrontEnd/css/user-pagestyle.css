@@ -1,31 +1,51 @@
-#welcomeh1{
-    text-align: center;
-    padding-top: 4%;    
-    padding-bottom: 3%;
+#welcomeh1 {
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 3%;
 }
 
-#userPic{
-    display: flex;
-    text-align: center;
-    margin: auto;
-    border-radius: 100%!important;
-    margin-bottom: 3%;
-    width: 336px!important;
+#userPic {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  border-radius: 100% !important;
+  margin-bottom: 3%;
+  width: 336px !important;
 }
 
-#card-container{
-    display: flex;
-    
+#card-container {
+  display: flex;
 }
 
-ul{
-    text-align: justify;
+ul {
+  text-align: justify;
 }
 
-.card{
-    margin-top: 0;
+.card {
+  margin-top: 0;
 }
 
-#caretakers-list{
-    
+table{
+    position: relative;
+    margin-top: 5%;
+}
+
+#caretakers-list {
+  display: inline;
+}
+tr {
+  display: block;
+}
+#rowh3 {
+  display: flex;
+  text-align: start;
+}
+
+#goToFeedBtn {
+  margin-right: 0;
+  text-align: right;
+}
+
+#nameTD {
+width: 70%;
 }
