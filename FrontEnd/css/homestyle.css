@@ -1,0 +1,64 @@
+.show {
+    display: inherit;
+}
+
+.hide{
+    display: none;
+}
+
+.nav-link{
+    display: flex;
+    align-content: center;
+    padding: 0!important;
+
+}
+
+.btn-link {
+    color: #fff;
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: rgb(190, 188, 188);
+    transition: all 0.3s;
+    
+}
+
+#carouselIndicators{
+    position: relative;
+    margin-top: 10%;
+}
+
+.carousel-item {
+    height: 583px;
+}
+
+section {
+    position: relative;
+    margin-top: 10%;
+
+}
+
+#feedback{
+margin: 10% auto;
+}
+
+section#feedback>div.container{
+    display: flex;
+align-self: center;
+}
+
+
+.card{
+    border: none;
+    text-align: center;
+    margin: auto;
+}
+.card-text{
+    margin: 3px;
+}
+
+.checked {
+
+    color: orange;
+  }
