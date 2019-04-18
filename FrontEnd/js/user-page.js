@@ -49,7 +49,7 @@ function showUserPage(response) {
     
     function populateList(response) {
         response.forEach(element => {
-            var listItem = "<li>" + element.firstName + "<button type='button' onclick='showSeePod()' class='btn btn-success'>Go To Feed</button></li>";
+            var listItem = "<li>" + element.firstName + "<button type='button' onclick='showSeePod("+user+")' class='btn btn-success'>Go To Feed</button></li>";
             $(listItem).appendTo($('#caretakers-list'));
         });
     }
