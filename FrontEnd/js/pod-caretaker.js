@@ -25,7 +25,7 @@ var showCaretaker = function() {
                 "<thead>"+
                     "<tr>"+
                     "<h5>"+"Sam"+"<h5>"+
-                        "<button id='podCreation' type='button' onclick='showLogin()' class='btn btn-lg btn-block btn-outline-primary'>Add a CareTaker</button>"+
+                        "<button id='podCreation' type='button' onclick='thealert();showLogin()' class='btn btn-lg btn-block btn-outline-primary'>Add a CareTaker</button>"+
                         "<th scope='col'>email</th>"+
                     "</tr>"+
                 "</thead>"+
@@ -47,4 +47,8 @@ var showCaretaker = function() {
 
     $(caretaker).appendTo(app);
 
+}
+
+function thealert() {
+    alert("Completed");
 }

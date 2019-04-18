@@ -68,7 +68,7 @@ function showPodStyle(response) {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod4.png' alt='pod4' class='rounded'width='100%'>" +
         "</ul>" +
-        "<button type='button' id='choose-4' onclick='choosespod()' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 4</button>" +
+        "<button type='button' id='choose-4' onclick='choosespod()'  class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 4</button>" +
         "</div>" +
         "</div>" +
         "</div>" +
@@ -84,12 +84,12 @@ function showPodStyle(response) {
 
 
 
+
+
+}
     var invalidpod = function () {
         console.log("som tin wong")
     }
-
-}
-
 
 function choosespod() {
     showPodPos();
