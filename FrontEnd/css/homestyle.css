@@ -1,3 +1,11 @@
+.show {
+    display: inherit;
+}
+
+.hide{
+    display: none;
+}
+
 .nav-link{
     display: flex;
     align-content: center;
