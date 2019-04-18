@@ -3,6 +3,9 @@ function showPodStyle(element) {
     $('#app').empty();
 
 
+
+
+
     var podStylePage = "<div class='container" +
         "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark  '>" +
         "</nav>" +
@@ -50,7 +53,7 @@ function showPodStyle(element) {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod3.png' alt='pod3' class='rounded' width='100%'>" +
         "</ul>" +
-        "<button type='button' id='choose-3'class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 3</button>" +
+        "<button type='button' id='choose-3' onclick='choosespod(this.id,element)' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 3</button>" +
         "</div>" +
         "</div>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -79,25 +82,30 @@ function showPodStyle(element) {
     $(podStylePage).appendTo(app);
 
 
-    var choosepod = function(event){
-        var podnum = event.target.id.split("-")[1];
-        console.log(podnum);
-        //impl in api
-        $.ajax({
-            url: 'http://192.168.250.78:8080/LetItGo/api/user/pod/'+podnum+'?email=' + user.email,
-            type:'POST',
-            async: true,
-            success: thepod,
-            error: invalidpod
-        })
+
+    var thepod = function () {
+        showPodStyle();
     }
 
-   var thepod = function(){
-       //nextpage
-   }
+    var invalidpod = function () {
+        console.log("som tin wong")
+    }
 
-   var invalidpod = function(){
-       console.log("som tin wong")
-   }
+}
 
+
+function choosespod(okapa,theuser) {
+    console.log("cheguei até aqui");
+    let podnum = okapa.split('-')[1];
+    console.log("e aqui");
+
+    
+    //impl in api
+    $.ajax({
+        url: 'http://192.168.250.78:8080/LetItGo/api/user/pod/' + podnum + '?email=' + theuser.email,
+        type: 'POST',
+        async: true,
+        success: thepod,
+        error: invalidpod
+    })
 }
