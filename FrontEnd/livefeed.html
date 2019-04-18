@@ -3,7 +3,7 @@
 
 <head>
     <meta charset='utf-8' />
-    <title>Playlist</title>
+    <title>Live feed</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='apple-touch-icon' href='icon.png'>
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'
@@ -24,29 +24,24 @@
     <br>
     <br>
     <div class='text-center'>
-        <iframe src='https://open.spotify.com/embed/user/tiagomspatricio/playlist/6OTfGJPezuilWkyh1fC882' width='300' height='380' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>
+        <iframe src="https://player.twitch.tv/?channel=caiokellermann" height="720" width="1280" frameborder="0"
+            scrolling="no" allowfullscreen="true">
+        </iframe>
     </div>
     <br>
 
     <div class='card-deck mb-3 text-center'>
         <div class='card mb-4 shadow-sm'>
             <div class='card-header'>
-                <h4 class='my-0 font-weight-normal'>This playlist will play while you are frozen.</h4>
+                <h4 class='my-0 font-weight-normal'>Live feed</h4>
             </div>
-            <br>
-            <br>
-            
-            <div class="float-right">
-                <button id='playlistConfirm' type='button' class='btn btn-lg btn-block btn-outline-primary'>Next!</button>
-                <button id='getBack' type='button' class='btn btn-lg btn-block btn-outline-primary'>Get back!</button>
-            </div>
-
         </div>
-    </div>
 
     </div>
 
-
+    <div>
+        <button id='returnBtn' type='submit' class='btn btn-primary'>Previous Page</button>
+    </div>
 
 
 </body>

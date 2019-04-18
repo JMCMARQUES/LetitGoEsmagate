@@ -22,7 +22,7 @@ var showLogin = function showLogin() {
         "</div>" +
         invalidCredentialsError +
         confirmLoginBtn +
-        "<button id='logincancel' type='submit' class='btn btn-primary'><a href='#app'></a>Cancel</button>" +
+        "<button id='logincancel' type='submit' class='btn btn-primary' >Cancel</button>" +
         "</form>" +
         "<div class='dropdown-divider'></div>" +
         "<a class='dropdown-item' href='#'>New around here? Sign up</a>" +
