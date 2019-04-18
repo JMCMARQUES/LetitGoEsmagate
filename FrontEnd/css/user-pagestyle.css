@@ -5,9 +5,27 @@
 }
 
 #userPic{
+    display: flex;
+    text-align: center;
     margin: auto;
     border-radius: 100%!important;
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 3%;
+    margin-bottom: 3%;
+    width: 336px!important;
+}
+
+#card-container{
+    display: flex;
+    
+}
+
+ul{
+    text-align: justify;
+}
+
+.card{
+    margin-top: 0;
+}
+
+#caretakers-list{
+    
 }
