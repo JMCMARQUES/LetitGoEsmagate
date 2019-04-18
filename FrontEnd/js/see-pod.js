@@ -2,17 +2,9 @@ function showSeePod() {
     console.log('showing see pod');
 
     $('#app').empty();
-    var user;
-    function letItGo(){
-        $('#app').empty();
-        
-       var shavedIce = "<div class='container'>" +
-       "<img src='letItGo.png' alt='shavedIce'>" +
-       "</div>"
-
-       $(shavedIce).appendTo(app);
-    }
     
+   
+
     var seePod = "<div class='container'>" +
         "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>" +
         "<a class='navbar-brand' href='#'>FROZEN User Page</a>" +
@@ -40,14 +32,15 @@ function showSeePod() {
 
     $(seePod).appendTo(app);
 
-    function letItGo(){
-        $('#app').empty();
-        
-       var shavedIce = "<div class='container'>" +
-       "<img src='letItGo.png' alt='shavedIce'>" +
-       "</div>"
 
-       $(shavedIce).appendTo(app);
-    }
+}
 
+function letItGo(){
+    $('#app').empty();
+    
+   var shavedIce = "<div class='container'> <br/>" +
+   "<img src='resources/img/letItGo.png' alt='shavedIce' class='rounded' width='70%'>" +
+   "</div>"
+
+   $(shavedIce).appendTo(app);
 }
