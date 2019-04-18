@@ -130,13 +130,6 @@ public class RestUserController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/createtestusers")
-    public ResponseEntity<User> creatseTestUsers() {
-
-        mockUserService.addTests();
-
-        return new ResponseEntity<>(HttpStatus.CREATED);
-    }
 
     @RequestMapping(method = RequestMethod.POST, path = "/pod/{id}")
     public ResponseEntity<User> addPod(@RequestParam String email,@PathVariable Integer id) {
