@@ -32,17 +32,11 @@ function showUserPage(response) {
     "</div> </div>" +
     "<div class='card mb-4 shadow-sm'>" +
     "<div class='card-header'>" +
-    "<h4 class=' font-weight-normal'>Live Feeds</h4>" +
-    "</div>" +
-    "<div class='card-body'>" +
-    "<h1 class='card-title pricing-card-title'>Live feeds</h1>" +
-    "<table class='table mt-3 mb-4' id='caretakers-list'>" +
-    "<thead>" +
-    "</thead>" +
-    "<tbody>" +
-    "<tr>" +
-    "</tr>" +
-    "</div>" +
+    "<h4 class='font-weight-normal'>Live Feeds</h4>" +
+    "</div> <div class='card-body'>" +
+
+    "<div class='container-fluid'><table class='table-responsive table mt-3 mb-4' id='caretakers-list'>" +
+    "</table></div>" +
     "</div>" +
     "</div>";
 
@@ -60,11 +54,11 @@ function showUserPage(response) {
   function populateList(response) {
     response.forEach(element => {
       var listItem =
-        "<tr><td>" +
+        "<tr><td id='nameTD'><h3 id='rowh3'>" +
         element.firstName +
-        "<button type='button' onclick='showSeePod(" +
+        "</h3></td><td id='btnTD'><button type='button' onclick='showSeePod(" +
         element.email +
-        ")' class='btn btn-success'>Go To Feed</button></td></tr>";
+        ")' class='btn btn-success' id='goToFeedBtn'>Go To Feed</button></td></tr>";
       $(listItem).appendTo($("#caretakers-list"));
     });
   }
