@@ -16,4 +16,23 @@
 
 #logincancel{
     margin-left: 2%;
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: all 0.3s;
+}
+#logincancel:hover{
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #343a40;
+}
+
+#loginConfirm{
+        background-color: #343a40;
+        border-color: #343a40;
+        transition: all 0.3s;
+    }
+#loginConfirm:hover{
+      background-color: #f8f9fa;
+      border-color: #f8f9fa;
+      color: #343a40;
 }
