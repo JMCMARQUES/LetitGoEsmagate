@@ -9,3 +9,9 @@
     position: relative;
     margin-top: 10%;
 }
+
+#invalidCredentialsError{
+    margin: 2%;
+    margin-left: 0;
+    color: rgb(240, 80, 52);
+}
