@@ -1,12 +1,7 @@
 function podConfirmation() {
     console.log('confirmation reached');
 
-
-
-
     $('#app').empty();
-
-
 
     var confirmations = " <div class='container'>" +
         "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>" +
