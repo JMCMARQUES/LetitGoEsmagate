@@ -3,3 +3,26 @@
 .form-check-input{margin-left: 5%!important;}
 
 .form-check-label{margin-left: 2%!important;}
+
+
+
+#nextBtn{
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: all 0.3s;
+    margin-left: 2%;
+}
+
+#nextBtn:hover{
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #343a40;
+}
+
+#choose-1,#choose-2,#choose-3,#choose-4{
+
+}
+
+#choose-1:hover,#choose-2:hover,#choose-3:hover,#choose-4:hover{
+    
+}

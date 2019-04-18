@@ -4,12 +4,12 @@ function showPodPos() {
 
     $('#app').empty();
     let nextBotton = '<button id="podCreation" type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="showCaretaker()">Next!</button>';
-    
+
+    let nextBotton = "<button id='podCreation' type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='showPodPlaylist()'>Next!</button>";
+
 
     var podPosition = "<div class='container'>" +
-        "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>" +
-        "<a class='navbar-brand' href='#'>FROZEN User Page</a>" +
-        "</nav></div><br><br>" +
+
         "<div class='text-center'>" +
         "<img id='podpos' src='resources/img/podpospatricio.jpg' alt='sam' class='rounded' width='200'>" +
         "</div><br>" +
@@ -20,20 +20,23 @@ function showPodPos() {
         "</div>" +
         "<div class='card-body'>" +
         "<!-- Material unchecked -->" +
-        "<div class='form-check'>" +
+        "<div class='form-check form-check-inline'>" +
         "<input type='radio' class='form-check-input' id='hanSoloPosition' name='materialExampleRadios'>" +
         "<label class='form-check-label' for='materialUnchecked'>Han Solo position</label>" +
+        "</div>" +
+        "<div class='form-check form-check-inline'>" +
         "<input type='radio' class='form-check-input' id='frozenPosition' name='materialExampleRadios'" +
         "checked>" +
         "<label class='form-check-label' for='materialChecked'>Frozen cowboy</label>" +
+        "</div>" +
         "</div>" +
         nextBotton +
         "</div></div></div>"
 
     $(podPosition).appendTo(app)
-    
 
-} 
-   function thealert() {
-        alert("Completed");
-    }
+
+}
+function thealert() {
+    alert("Completed");
+}

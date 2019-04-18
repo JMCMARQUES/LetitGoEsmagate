@@ -6,13 +6,8 @@ function showSeePod() {
    
 
     var seePod = "<div class='container'>" +
-        "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>" +
-        "<a class='navbar-brand' href='#'>FROZEN User Page</a>" +
-        "</nav>" +
-        "</div>" +
-        "<br>" +
-        "<br>" +
-        "<div class='text-center'>" +
+        
+        "<div class='text-center embed-responsive embed-responsive-16by9'>" +
         "<iframe src='https://player.twitch.tv/?channel=caiokellermann' height='720' width='1280' frameborder='0'scrolling='no' allowfullscreen='true'>" +
         "</iframe>" +
         "</div>" +
@@ -26,7 +21,7 @@ function showSeePod() {
         "</div>" +
         "<div>" +
         "<button id='returnBtn' type='submit' onclick='showUserPage()' class='btn btn-primary'>Previous Page</button>" +
-        "<button id='letItGoBtn' type='submit' onclick='letItGo()' class='btn btn-primary'>Let it Goooo!</button>" +
+        "<button id='letItGoBtn' type='submit' onclick='letItGo()' class='btn btn-primary btn-lg'>Let it Goooo!</button>" +
         "</div>" +
         "</div>";
 

@@ -1,0 +1,22 @@
+#returnBtn{
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: all 0.3s;
+}
+#returnBtn:hover{
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #343a40;
+}
+#letItGoBtn{
+    background-color: red;
+    border-color: red;
+    transition: all 0.3s;
+    margin: auto;
+}
+
+#letItGoBtn:hover{
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #343a40;
+}
