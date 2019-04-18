@@ -1,11 +1,15 @@
 function showUserPage(response) {
-  console.log(response);
-  $("#app").empty();
-
+  //console.log(response);
+  console.log('in the user page')
   var user = response;
 
+  //showPodStyle(user)
+  $("#app").empty();
+
+  
+
   var podCreationBtn =
-    "</ul> <button id='podCreation' type='button' onclick='showPodStyle("+user+")' class='btn btn-lg btn-block btn-outline-primary'>Get your Pod!</button>";
+    "</ul> <button id='podCreation' type='button' onclick='showPodStyle()' class='btn btn-lg btn-block btn-outline-primary'>Get your Pod!</button>";
 
   var userPage =
     "<div class='container'>" +
@@ -56,9 +60,7 @@ function showUserPage(response) {
       var listItem =
         "<tr><td id='nameTD'><h3 id='rowh3'>" +
         element.firstName +
-        "</h3></td><td id='btnTD'><button type='button' onclick='showSeePod(" +
-        user +
-        ")' class='btn btn-success' id='goToFeedBtn'>Go To Feed</button></td></tr>";
+        "</h3></td><td id='btnTD'><button type='button' onclick='showSeePod()' class='btn btn-success' id='goToFeedBtn'>Go To Feed</button></td></tr>";
       $(listItem).appendTo($("#caretakers-list"));
     });
   }

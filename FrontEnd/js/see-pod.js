@@ -1,9 +1,23 @@
-function showSeePod(element) {
+function showSeePod() {
     console.log('showing see pod');
 
     $('#app').empty();
+    var user;
+    function letItGo(){
+        $('#app').empty();
+        
+       var shavedIce = "<div class='container'>" +
+       "<img src='letItGo.png' alt='shavedIce'>" +
+       "</div>"
 
+       $(shavedIce).appendTo(app);
+    }
+    
     var seePod = "<div class='container'>" +
+        "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>" +
+        "<a class='navbar-brand' href='#'>FROZEN User Page</a>" +
+        "</nav>" +
+        "</div>" +
         "<br>" +
         "<br>" +
         "<div class='text-center'>" +
@@ -19,7 +33,7 @@ function showSeePod(element) {
         "</div>" +
         "</div>" +
         "<div>" +
-        "<button id='returnBtn' type='submit' onclick='showUserPage("+elemen+")' class='btn btn-primary'>Previous Page</button>" +
+        "<button id='returnBtn' type='submit' onclick='showUserPage()' class='btn btn-primary'>Previous Page</button>" +
         "<button id='letItGoBtn' type='submit' onclick='letItGo()' class='btn btn-primary'>Let it Goooo!</button>" +
         "</div>" +
         "</div>";
@@ -32,6 +46,8 @@ function showSeePod(element) {
        var shavedIce = "<div class='container'>" +
        "<img src='letItGo.png' alt='shavedIce'>" +
        "</div>"
+
+       $(shavedIce).appendTo(app);
     }
 
 }
