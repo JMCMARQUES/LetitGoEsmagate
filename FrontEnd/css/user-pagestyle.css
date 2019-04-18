@@ -42,10 +42,30 @@ tr {
 }
 
 #goToFeedBtn {
+  
   margin-right: 0;
   text-align: right;
 }
 
 #nameTD {
 width: 70%;
+}
+
+.card-header{
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #f8f9fa;
+}
+
+#podCreation{
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+#podCreation:hover{
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #343a40;
 }
