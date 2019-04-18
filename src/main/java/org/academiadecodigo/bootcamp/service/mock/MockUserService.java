@@ -8,26 +8,28 @@ import org.springframework.stereotype.Service;
 public class MockUserService extends AbstractMockService<User> {
 
 
-    public User getUser(Integer id) {
-        return modelMap.get(id);
+    public User getUser(String email) {
+        return modelMap.get(email);
     }
 
     public void add(User user) {
 
-        if (user.getId() == null) {
-            user.setId(getNextId());
-        }
-
-        modelMap.put(user.getId(), user);
+        modelMap.put(user.getEmail(), user);
     }
 
     public void delete(User user) throws Exception {
 
-        if(!user.getRecipients().isEmpty()){
+        if(!user.getCaretakers().isEmpty()){
             throw new Exception();
         }
-        modelMap.remove(user.getId());
+        modelMap.remove(user.getEmail());
     }
+
+    public void addUserCaretaker(User user, User caretaker){
+        user.addCaretaker(caretaker);
+        caretaker.addTakingCare(user);
+    }
+
 
     public void addTests() {
 

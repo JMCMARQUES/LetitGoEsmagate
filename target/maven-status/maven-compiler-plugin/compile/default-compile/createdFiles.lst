@@ -1,7 +1,9 @@
+org/academiadecodigo/bootcamp/dto/UserDTO.class
 org/academiadecodigo/bootcamp/model/Pod.class
-org/academiadecodigo/bootcamp/model/Recipient.class
+org/academiadecodigo/bootcamp/model/Caretaker.class
 org/academiadecodigo/bootcamp/rest/RestUserController.class
 org/academiadecodigo/bootcamp/service/mock/AbstractMockService.class
+org/academiadecodigo/bootcamp/dto/Converter.class
 org/academiadecodigo/bootcamp/service/UserService.class
 org/academiadecodigo/bootcamp/service/mock/MockUserService.class
 org/academiadecodigo/bootcamp/model/User.class

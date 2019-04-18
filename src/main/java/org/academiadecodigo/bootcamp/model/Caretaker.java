@@ -1,6 +1,6 @@
 package org.academiadecodigo.bootcamp.model;
 
-public class Recipient {
+public class Caretaker {
 
     private User user;
 
