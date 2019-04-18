@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.service.mock;
 
+import org.academiadecodigo.bootcamp.model.DefaultPods;
+import org.academiadecodigo.bootcamp.model.Pod;
 import org.academiadecodigo.bootcamp.model.User;
 import org.springframework.stereotype.Service;
 
@@ -72,5 +74,21 @@ public class MockUserService extends AbstractMockService<User> {
 
 
 
+    }
+
+    public void addPod(User user,Integer id) {
+        Pod pod;
+        switch(id){
+            case 1: pod = new Pod("Green",2);
+
+            case 2: pod = new Pod("Blue",1);
+
+            case 3: pod = new Pod("Yellow",3);
+
+            case 4: pod = new Pod("Black",4);
+
+            default: pod = new Pod("Black",4);
+        }
+        user.setPod(pod);
     }
 }
