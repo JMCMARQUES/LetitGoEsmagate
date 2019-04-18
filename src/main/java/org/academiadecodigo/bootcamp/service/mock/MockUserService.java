@@ -65,6 +65,11 @@ public class MockUserService extends AbstractMockService<User> {
         joao.setEmail("joao@mail.com");
         joao.setPassword("12345");
 
+        sam.addCaretaker(caio);
+        caio.addTakingCare(sam);
+        sam.addCaretaker(diogo);
+        diogo.addTakingCare(sam);
+
         add(patricio);
         add(diogo);
         add(sam);
