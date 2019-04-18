@@ -57,7 +57,7 @@ function showUserPage(response) {
         "<tr><td id='nameTD'><h3 id='rowh3'>" +
         element.firstName +
         "</h3></td><td id='btnTD'><button type='button' onclick='showSeePod(" +
-        element +
+        user +
         ")' class='btn btn-success' id='goToFeedBtn'>Go To Feed</button></td></tr>";
       $(listItem).appendTo($("#caretakers-list"));
     });

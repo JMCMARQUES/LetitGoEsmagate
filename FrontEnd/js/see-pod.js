@@ -19,7 +19,7 @@ function showSeePod(element) {
         "</div>" +
         "</div>" +
         "<div>" +
-        "<button id='returnBtn' type='submit' class='btn btn-primary'>Previous Page</button>" +
+        "<button id='returnBtn' type='submit' onclick='showUserPage("+elemen+")' class='btn btn-primary'>Previous Page</button>" +
         "<button id='letItGoBtn' type='submit' onclick='letItGo()' class='btn btn-primary'>Let it Goooo!</button>" +
         "</div>" +
         "</div>";
@@ -30,7 +30,7 @@ function showSeePod(element) {
         $('#app').empty();
         
        var shavedIce = "<div class='container'>" +
-       "<img src='pic_trulli.jpg' alt='Italian Trulli'>" +
+       "<img src='letItGo.png' alt='shavedIce'>" +
        "</div>"
     }
 
