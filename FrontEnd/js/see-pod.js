@@ -40,6 +40,7 @@ function letItGo(){
     
    var shavedIce = "<div class='container'> <br/>" +
    "<img src='resources/img/letItGo.png' alt='shavedIce' class='rounded' width='70%'>" +
+   '<iframe width="560" height="315" id="autoplaypls" src="https://www.youtube.com/embed/L0MK7qz13bU?start=125" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'+
    "</div>"
 
    $(shavedIce).appendTo(app);

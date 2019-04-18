@@ -1,9 +1,9 @@
 function showPodPos() {
     console.log('showing podposition')
-
+    var str = "Completed";
 
     $('#app').empty();
-    let nextBotton = "<button id='podCreation' type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='showPodPlaylist()'>Next!</button>";
+    let nextBotton = '<button id="podCreation" type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="showCaretaker()">Next!</button>';
     
 
     var podPosition = "<div class='container'>" +
@@ -11,7 +11,7 @@ function showPodPos() {
         "<a class='navbar-brand' href='#'>FROZEN User Page</a>" +
         "</nav></div><br><br>" +
         "<div class='text-center'>" +
-        "<img id='podpos' src='resources/img/podpos1.jpg' alt='sam' class='rounded' width='200'>" +
+        "<img id='podpos' src='resources/img/podpospatricio.jpg' alt='sam' class='rounded' width='200'>" +
         "</div><br>" +
         "<div class='card-deck mb-3 text-center'>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -31,5 +31,9 @@ function showPodPos() {
         "</div></div></div>"
 
     $(podPosition).appendTo(app)
+    
 
-}
+} 
+   function thealert() {
+        alert("Completed");
+    }
