@@ -10,7 +10,7 @@ var showLogin = function showLogin() {
 
     var loginPage = "<div id='godown' class='container'>" +
         "<div>" +
-        "<h1>Login</h1>" +
+        "<h1 id='loginh1'>Login</h1>" +
         "<form class='px-4 py-3'>" +
         "<div class='form-group'>" +
         "<label for='exampleDropdownFormEmail1'>Email address</label>" +
@@ -22,7 +22,7 @@ var showLogin = function showLogin() {
         "</div>" +
         invalidCredentialsError +
         confirmLoginBtn +
-        "<button id='logincancel' type='submit' class='btn btn-primary'>Cancel</button>" +
+        "<button id='logincancel' type='submit' class='btn btn-primary'><a href='#app'></a>Cancel</button>" +
         "</form>" +
         "<div class='dropdown-divider'></div>" +
         "<a class='dropdown-item' href='#'>New around here? Sign up</a>" +
