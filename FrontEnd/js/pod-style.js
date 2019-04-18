@@ -26,7 +26,7 @@ function showPodStyle(response) {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod1.png' alt='pod1' class='rounded' width='100%'>" +
         "</ul>" +
-        "<button type='button' id='choose-1' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 1</button>" +
+        "<button type='button' id='choose-1' onclick='choosespod()' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 1</button>" +
         "</div>" +
         "</div>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -40,7 +40,7 @@ function showPodStyle(response) {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod2.png' alt='pod2' class='rounded' width='100%'>" +
         "</ul>" +
-        "<button type='button' id='choose-2' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 2</button>" +
+        "<button type='button' id='choose-2' onclick='choosespod()' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 2</button>" +
         "</div>" +
         "</div>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -68,7 +68,7 @@ function showPodStyle(response) {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod4.png' alt='pod4' class='rounded'width='100%'>" +
         "</ul>" +
-        "<button type='button' id='choose-4' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 4</button>" +
+        "<button type='button' id='choose-4' onclick='choosespod()' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 4</button>" +
         "</div>" +
         "</div>" +
         "</div>" +

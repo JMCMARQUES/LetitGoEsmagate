@@ -3,15 +3,15 @@ function showPodPlaylist() {
 
     $('#app').empty();
 
-    var ShowPodPlaylist = "<div class='container'>" +
+    var showPodPlaylist = /*"<div class='container'>" +
         "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark  '>" +
         "<a class='navbar-brand' href='#'>FROZEN User Page</a>" +
-        "</nav>" +
+        "</nav>" 
         "</div>" +
         "<br>" +
         "<br>" +
-        "<div class='text-center'>" +
-        "<iframe src='https://open.spotify.com/embed/user/tiagomspatricio/playlist/6OTfGJPezuilWkyh1fC882' width='300' height='380' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>" +
+        "<div class='text-center'>" +*/
+        '<iframe src="https://open.spotify.com/embed/user/tiagomspatricio/playlist/6OTfGJPezuilWkyh1fC882" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'/* +
         "</div>" +
         "<br>" +
         "<div class='card-deck mb-3 text-center'>" +
@@ -22,13 +22,13 @@ function showPodPlaylist() {
         "<br>" +
         "<br>" +
         "<div class='float-right'>" +
-        "<button id='playlistConfirm' type='button' onclick='podCaretaker()' class='btn btn-lg btn-block btn-outline-primary'>Next!</button>" +
+        "<button id='playlistConfirm' type='button' class='btn btn-lg btn-block btn-outline-primary'>Next!</button>" +
         "<button id='getBack' type='button' class='btn btn-lg btn-block btn-outline-primary'>Get back!</button>" +
         "</div>" +
         "</div>" +
-        "</div>";
+        "</div>"*/;
 
-    (showPodPlaylist).appendto(app);
+    $(showPodPlaylist).appendTo(app);
 
 
 }

@@ -3,7 +3,7 @@ function showPodPos() {
 
 
     $('#app').empty();
-    let nextBotton = "<button id='podCreation' type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='podCaretaker()'>Next!</button>";
+    let nextBotton = "<button id='podCreation' type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='showPodPlaylist()'>Next!</button>";
     
 
     var podPosition = "<div class='container'>" +
