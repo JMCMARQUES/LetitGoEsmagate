@@ -1,6 +1,7 @@
 #welcomeh1{
     text-align: center;
     padding-top: 4%;    
+    padding-bottom: 3%;
 }
 
 #userPic{
@@ -8,4 +9,5 @@
     border-radius: 100%!important;
     max-width: 100%;
     height: auto;
+    padding-bottom: 3%;
 }

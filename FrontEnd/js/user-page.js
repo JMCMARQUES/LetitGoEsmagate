@@ -11,7 +11,7 @@ function showUserPage(response) {
     var userPage = "<div class='container'>" +
         "<h1 id='welcomeh1'>Welcome back, " + user.firstName + "!</h1>" +
         "<div class='text-center'>"+
-        "<img class='img-fluid' id='userPic' src='resources/img/"+ user.firstName +".png' alt=" + user.firstName +" class='rounded'> <br>" +
+        "<img class='img-fluid' id='userPic' src='resources/img/"+ user.firstName +".png' alt=" + user.firstName +" class='rounded'>" +
         "</div>"+
         "<div class='card-deck mb-3 text-center'>" +
         "<div class='card mb-4 shadow-sm'>" +
