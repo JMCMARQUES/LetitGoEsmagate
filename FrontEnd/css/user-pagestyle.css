@@ -1,13 +1,71 @@
-#welcomeh1{
-    text-align: center;
-    padding-top: 4%;    
-    padding-bottom: 3%;
+#welcomeh1 {
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 3%;
 }
 
-#userPic{
-    margin: auto;
-    border-radius: 100%!important;
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 3%;
+#userPic {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  border-radius: 100% !important;
+  margin-bottom: 3%;
+  width: 336px !important;
+}
+
+#card-container {
+  display: flex;
+}
+
+ul {
+  text-align: justify;
+}
+
+.card {
+  margin-top: 0;
+}
+
+table{
+    position: relative;
+    margin-top: 5%;
+}
+
+#caretakers-list {
+  display: inline;
+}
+tr {
+  display: block;
+}
+#rowh3 {
+  display: flex;
+  text-align: start;
+}
+
+#goToFeedBtn {
+  
+  margin-right: 0;
+  text-align: right;
+}
+
+#nameTD {
+width: 70%;
+}
+
+.card-header{
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #f8f9fa;
+}
+
+#podCreation{
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+#podCreation:hover{
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #343a40;
 }

@@ -1,11 +1,14 @@
-function showPodStyle() {
+function showPodStyle(response) {
     console.log('showing pod style');
+    console.log(response)
     $('#app').empty();
+
+
+
 
 
     var podStylePage = "<div class='container" +
         "<nav class='navbar navbar-expand-lg fixed-top navbar-dark bg-dark  '>" +
-        "<a class='navbar-brand' href='#'>FROZEN Pod Option</a>" +
         "</nav>" +
         "</div>" +
 
@@ -23,7 +26,7 @@ function showPodStyle() {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod1.png' alt='pod1' class='rounded' width='100%'>" +
         "</ul>" +
-        "<button type='button' class='btn btn-lg btn-block btn-outline-primary'>Chose Pod 1</button>" +
+        "<button type='button' id='choose-1' onclick='choosespod()' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 1</button>" +
         "</div>" +
         "</div>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -37,7 +40,7 @@ function showPodStyle() {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod2.png' alt='pod2' class='rounded' width='100%'>" +
         "</ul>" +
-        "<button type='button' class='btn btn-lg btn-block btn-outline-primary'>Chose Pod 2</button>" +
+        "<button type='button' id='choose-2' onclick='choosespod()' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 2</button>" +
         "</div>" +
         "</div>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -51,7 +54,7 @@ function showPodStyle() {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod3.png' alt='pod3' class='rounded' width='100%'>" +
         "</ul>" +
-        "<button type='button' class='btn btn-lg btn-block btn-outline-primary'>Chose Pod 3</button>" +
+        "<button type='button' id='choose-3' onclick='choosespod()' class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 3</button>" +
         "</div>" +
         "</div>" +
         "<div class='card mb-4 shadow-sm'>" +
@@ -65,7 +68,7 @@ function showPodStyle() {
         "<ul class='list-unstyled mt-3 mb-4'>" +
         "<img id='godown' src='resources/img/pod4.png' alt='pod4' class='rounded'width='100%'>" +
         "</ul>" +
-        "<button type='button' class='btn btn-lg btn-block btn-outline-primary'>Chose Pod 4</button>" +
+        "<button type='button' id='choose-4' onclick='choosespod()'  class='btn btn-lg btn-block btn-outline-primary'>Choose Pod 4</button>" +
         "</div>" +
         "</div>" +
         "</div>" +
@@ -78,4 +81,16 @@ function showPodStyle() {
 
 
     $(podStylePage).appendTo(app);
+
+
+
+
+
+}
+    var invalidpod = function () {
+        console.log("som tin wong")
+    }
+
+function choosespod() {
+    showPodPos();
 }
